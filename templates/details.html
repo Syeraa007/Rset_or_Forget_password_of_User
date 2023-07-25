@@ -1,0 +1,17 @@
+{% extends 'index.html' %}
+
+{% block title %}
+    <title>User details display Page</title>
+{% endblock %}
+
+{% block body_block %}
+
+<center>
+   <h1><b>Username of User is {{UO.username}} </b></h1>
+   <h1><b>Email of User is {{UO.email}} </b></h1>
+
+   <h1><b>Address of User is {{PO.address}} </b></h1>
+   <h1><b>Profile image of User is </b></h1>
+   <img src="{{PO.pic.url}}" alt="No image found" height="200px" width="200px">
+</center>
+{% endblock %}

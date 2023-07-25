@@ -1,0 +1,23 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}
+<title>Reset password page</title>
+{% endblock %}
+
+{% block body_block %}
+<center>
+    <h1>Reset Password</h1>
+    <table>
+        <br><br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <label for="username">User_Name : </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" name="username" id="username"> <br> <br>
+            <label for="password">Password : </label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="password" name="password" id="password"> <br><br>
+            <input type="submit" value="Reset Code" class="btn btn-success">
+        </form>
+    </table>
+</center>
+{% endblock %}
